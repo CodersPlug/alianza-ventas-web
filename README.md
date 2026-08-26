@@ -1,1 +1,5 @@
-Detalle web del informe de ventas (Alianza Grafica). Publicado por el cron/Kapso.
+# Alianza Grafica — informe matutino
+
+One-pager diario (ventas + cheques + CC).
+
+Live: https://codersplug.github.io/alianza-ventas-web/
