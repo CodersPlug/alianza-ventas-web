@@ -20,7 +20,9 @@
   .job { line-height: 1.35; }
   .when { margin-top: .45rem; font-size: .85rem; color: #d4d4d8; }
   .vencido { color: #ef4444; font-weight: 700; letter-spacing: .04em; }
-  article.is-vencido { border-color: #7f1d1d; }
+  .fecha-vencida { color: #ef4444; font-weight: 700; }
+  article.is-vencido { border-color: #7f1d1d; background: #1a1214; }
+  article.is-vencido .when { color: #fca5a5; }
   .amt { margin-top: .35rem; font-size: .95rem; font-weight: 600; color: #fafafa; }
   .empty { color: #71717a; }
   footer { margin-top: 2rem; color: #71717a; font-size: .75rem; }
@@ -30,21 +32,21 @@
 <main>
   <h1>Informe matutino · 26/10/2026</h1>
   <p class="sub">Alianza Grafica · 26/10/2026</p>
-  <div class="block"><h2 class="block-title">Ventas en curso</h2><p class="summary">9 abiertos · En Entrega 0 · En Producción 8 · En Espera 1. Sin montos.</p><p class="summary">Etiquetas = columna Producción de Eventos. En Espera = pedido recibido, aún no arrancó. En Producción = en curso. En Entrega = listo para entregar. Abierta = no Entregado (puede estar cobrada). Si FechaEntrega ya pasó y sigue abierto → <span class="vencido">VENCIDO</span>.</p><section><h2>En Entrega <span>0</span></h2><p class="empty">Ninguna</p></section><section><h2>En Producción <span>8</span></h2><article>
+  <div class="block"><h2 class="block-title">Ventas en curso</h2><p class="summary">9 abiertos · En Entrega 0 · En Producción 8 · En Espera 1. Sin montos.</p><p class="summary">Etiquetas = columna Producción de Eventos. En Espera = pedido recibido, aún no arrancó. En Producción = en curso. En Entrega = listo para entregar. Abierta = no Entregado (puede estar cobrada). Si FechaEntrega ya pasó y sigue abierto → <span class="vencido">VENCIDO</span>.</p><section><h2>En Entrega <span>0</span></h2><p class="empty">Ninguna</p></section><section><h2>En Producción <span>8</span></h2><article class="is-vencido">
           <div class="who">SIO Technology SRL</div>
           <div class="meta">Fila 234 · En Producción · cobrada</div>
           <div class="job">Factura A Nro. 00002-00000122 - 1 Banner 3 x 2 mts (standard)</div>
-          <div class="when">Entrega: 04/10/2026</div>
-        </article><article>
+          <div class="when">Entrega: <span class="fecha-vencida">04/10/2026</span> · <span class="vencido">VENCIDO</span></div>
+        </article><article class="is-vencido">
           <div class="who">Club Atlético Banfield</div>
           <div class="meta">Fila 283 · En Producción · pendiente de cobro</div>
           <div class="job">12 manteles a $14.900, 12 cortinas a $24.900, 6 banderines premium a $16.500 más IVA</div>
-          <div class="when">Entrega: 20/10/2026</div>
-        </article><article>
+          <div class="when">Entrega: <span class="fecha-vencida">20/10/2026</span> · <span class="vencido">VENCIDO</span></div>
+        </article><article class="is-vencido">
           <div class="who">Remax Dream</div>
           <div class="meta">Fila 288 · En Producción · pendiente de cobro</div>
           <div class="job">200 tarjetas + 3 carteles 80x50 con bastidor</div>
-          <div class="when">Entrega: 24/10/2026</div>
+          <div class="when">Entrega: <span class="fecha-vencida">24/10/2026</span> · <span class="vencido">VENCIDO</span></div>
         </article><article>
           <div class="who">Remax Dreams</div>
           <div class="meta">Fila 299 · En Producción · pendiente de cobro</div>
@@ -70,12 +72,12 @@
           <div class="meta">Fila 300 · En Producción · pendiente de cobro</div>
           <div class="job">2 fly banner gota; 1 roll up</div>
           <div class="when">Entrega: 02/11/2026</div>
-        </article></section><section><h2>En Espera <span>1</span></h2><article>
+        </article></section><section><h2>En Espera <span>1</span></h2><article class="is-vencido">
           <div class="who">Servicios F y F</div>
           <div class="meta">Fila 281 · En Espera · pendiente de cobro</div>
           <div class="job">7 juegos de carteles con vinilo a $92.000 c/u más IVA</div>
-          <div class="when">Entrega: 23/10/2026</div>
-        </article></section></div><div class="block"><h2 class="block-title">Cobranza (entregados)</h2><p class="summary">Entregados y pagados: 63 · $11.957.870. Entregados con cobro pendiente: 9 · $4.028.660.</p><section><h2>Entregados con cobro pendiente <span>9</span></h2><article>
+          <div class="when">Entrega: <span class="fecha-vencida">23/10/2026</span> · <span class="vencido">VENCIDO</span></div>
+        </article></section></div><div class="block"><h2 class="block-title">Cobranza (entregados)</h2><p class="summary">Periodo: historial completo de Eventos (todas las ventas con Producción=Entregado; sin filtro de Fecha). Mismos números que el WhatsApp del matutino.</p><p class="summary">Entregados y pagados: 63 · $11.957.870. Entregados con cobro pendiente: 9 · $4.028.660.</p><section><h2>Entregados con cobro pendiente <span>9</span></h2><article>
         <div class="who">Fernando Cutone</div>
         <div class="meta">Fila 201 · Entregado · pendiente de cobro</div>
         <div class="amt">$1.477.260</div>
@@ -215,7 +217,7 @@
         <div class="amt">$191.000</div>
         <div class="job">2 fly banner gota; 1 roll up</div>
       </article></div>
-  <footer>Ventas sin montos. Cobranza/cheques/CC con montos. Fila = planilla Eventos. VENCIDO = FechaEntrega pasada y pedido abierto.</footer>
+  <footer>Ventas sin montos. Cobranza = historial completo Entregado. Cheques/CC con montos. Fila = Eventos. VENCIDO = FechaEntrega pasada y pedido abierto (rojo). Conteos WA = este HTML de la misma corrida.</footer>
 </main>
 </body>
 </html>
