@@ -19,6 +19,8 @@
   .meta { color: #a1a1aa; font-size: .8rem; margin: .2rem 0 .45rem; }
   .job { line-height: 1.35; }
   .when { margin-top: .45rem; font-size: .85rem; color: #d4d4d8; }
+  .vencido { color: #ef4444; font-weight: 700; letter-spacing: .04em; }
+  article.is-vencido { border-color: #7f1d1d; }
   .amt { margin-top: .35rem; font-size: .95rem; font-weight: 600; color: #fafafa; }
   .empty { color: #71717a; }
   footer { margin-top: 2rem; color: #71717a; font-size: .75rem; }
@@ -28,52 +30,106 @@
 <main>
   <h1>Informe matutino · 26/10/2026</h1>
   <p class="sub">Alianza Grafica · 26/10/2026</p>
-  <div class="block"><h2 class="block-title">Ventas en curso</h2><p class="summary">9 abiertos · En Entrega 0 · En Producción 7 · En Espera 2. Sin montos.</p><p class="summary">Etiquetas = columna Producción de Eventos. En Espera = pedido recibido, aún no arrancó. En Producción = en curso. En Entrega = listo para entregar. Abierta = no Entregado (puede estar cobrada).</p><section><h2>En Entrega <span>0</span></h2><p class="empty">Ninguna</p></section><section><h2>En Producción <span>7</span></h2><article>
+  <div class="block"><h2 class="block-title">Ventas en curso</h2><p class="summary">9 abiertos · En Entrega 0 · En Producción 8 · En Espera 1. Sin montos.</p><p class="summary">Etiquetas = columna Producción de Eventos. En Espera = pedido recibido, aún no arrancó. En Producción = en curso. En Entrega = listo para entregar. Abierta = no Entregado (puede estar cobrada). Si FechaEntrega ya pasó y sigue abierto → <span class="vencido">VENCIDO</span>.</p><section><h2>En Entrega <span>0</span></h2><p class="empty">Ninguna</p></section><section><h2>En Producción <span>8</span></h2><article>
           <div class="who">SIO Technology SRL</div>
-          <div class="meta">Fila 234 · En Producción</div>
+          <div class="meta">Fila 234 · En Producción · cobrada</div>
           <div class="job">Factura A Nro. 00002-00000122 - 1 Banner 3 x 2 mts (standard)</div>
           <div class="when">Entrega: 04/10/2026</div>
         </article><article>
           <div class="who">Club Atlético Banfield</div>
-          <div class="meta">Fila 283 · En Producción</div>
+          <div class="meta">Fila 283 · En Producción · pendiente de cobro</div>
           <div class="job">12 manteles a $14.900, 12 cortinas a $24.900, 6 banderines premium a $16.500 más IVA</div>
           <div class="when">Entrega: 20/10/2026</div>
         </article><article>
           <div class="who">Remax Dream</div>
-          <div class="meta">Fila 288 · En Producción</div>
+          <div class="meta">Fila 288 · En Producción · pendiente de cobro</div>
           <div class="job">200 tarjetas + 3 carteles 80x50 con bastidor</div>
           <div class="when">Entrega: 24/10/2026</div>
         </article><article>
           <div class="who">Remax Dreams</div>
-          <div class="meta">Fila 299 · En Producción</div>
+          <div class="meta">Fila 299 · En Producción · pendiente de cobro</div>
           <div class="job">Cien tarjetas</div>
           <div class="when">Entrega: 27/10/2026</div>
         </article><article>
+          <div class="who">Remax Domira</div>
+          <div class="meta">Fila 305 · En Producción · pendiente de cobro</div>
+          <div class="job">100 tarjetas</div>
+          <div class="when">Entrega: 30/10/2026</div>
+        </article><article>
           <div class="who">Club Atlas</div>
-          <div class="meta">Fila 298 · En Producción</div>
+          <div class="meta">Fila 298 · En Producción · pendiente de cobro</div>
           <div class="job">2 fly banners gota</div>
           <div class="when">Entrega: 31/10/2026</div>
         </article><article>
           <div class="who">Racing Club</div>
-          <div class="meta">Fila 179 · En Producción</div>
+          <div class="meta">Fila 179 · En Producción · pendiente de cobro</div>
           <div class="job">15 Banderines bordado racing</div>
           <div class="when">Entrega: 02/11/2026</div>
         </article><article>
           <div class="who">Nadia Printar</div>
-          <div class="meta">Fila 300 · En Producción</div>
+          <div class="meta">Fila 300 · En Producción · pendiente de cobro</div>
           <div class="job">2 fly banner gota; 1 roll up</div>
           <div class="when">Entrega: 02/11/2026</div>
-        </article></section><section><h2>En Espera <span>2</span></h2><article>
+        </article></section><section><h2>En Espera <span>1</span></h2><article>
           <div class="who">Servicios F y F</div>
-          <div class="meta">Fila 281 · En Espera</div>
+          <div class="meta">Fila 281 · En Espera · pendiente de cobro</div>
           <div class="job">7 juegos de carteles con vinilo a $92.000 c/u más IVA</div>
           <div class="when">Entrega: 23/10/2026</div>
-        </article><article>
-          <div class="who">Remax Domira</div>
-          <div class="meta">Fila 305 · En Espera</div>
-          <div class="job">100 tarjetas</div>
-          <div class="when">Entrega: 30/10/2026</div>
-        </article></section></div><div class="block"><h2 class="block-title">Cheques emitidos</h2><p class="summary">Proximos 7 dias (26/10/2026 – 02/11/2026): $0 · 0 cheques. Total posdatados: $0 · 0.</p><p class="empty">Sin cheques emitidos posdatados</p></div><div class="block"><h2 class="block-title">Cuentas corrientes</h2><p class="summary">Total CC clientes: $6.583.990 · 17 ventas.</p><article>
+        </article></section></div><div class="block"><h2 class="block-title">Cobranza (entregados)</h2><p class="summary">Entregados y pagados: 63 · $11.957.870. Entregados con cobro pendiente: 9 · $4.028.660.</p><section><h2>Entregados con cobro pendiente <span>9</span></h2><article>
+        <div class="who">Fernando Cutone</div>
+        <div class="meta">Fila 201 · Entregado · pendiente de cobro</div>
+        <div class="amt">$1.477.260</div>
+        <div class="job">remeras, gorras y chombas</div>
+        <div class="when">Entrega: 16/10/2026</div>
+      </article><article>
+        <div class="who">Club Atlético Luján</div>
+        <div class="meta">Fila 156 · Entregado · pendiente de cobro</div>
+        <div class="amt">$1.184.400</div>
+        <div class="job">Pedido Club Atlético Luján (36 tazas $4.800, 24 banderines protocolo $18.500, 24 cartuchera doble cierre $10.900, 24 banderines triangular $10.500, 12 individuales económico $4.500)</div>
+        <div class="when">Entrega: 18/09/2026</div>
+      </article><article>
+        <div class="who">Racing Club</div>
+        <div class="meta">Fila 131 · Entregado · pendiente de cobro</div>
+        <div class="amt">$330.000</div>
+        <div class="job">20 banderines protocolares</div>
+        <div class="when">Entrega: 21/08/2026</div>
+      </article><article>
+        <div class="who">Racing Club</div>
+        <div class="meta">Fila 142 · Entregado · pendiente de cobro</div>
+        <div class="amt">$330.000</div>
+        <div class="job">20 banderines protocolares</div>
+        <div class="when">Entrega: 25/08/2026</div>
+      </article><article>
+        <div class="who">Partido Vecinal Tigre</div>
+        <div class="meta">Fila 218 · Entregado · pendiente de cobro</div>
+        <div class="amt">$280.000</div>
+        <div class="job">Porta prensa</div>
+        <div class="when">Entrega: 20/09/2026</div>
+      </article><article>
+        <div class="who">Club Atlas</div>
+        <div class="meta">Fila 190 · Entregado · pendiente de cobro</div>
+        <div class="amt">$150.000</div>
+        <div class="job">Dos fly banner</div>
+        <div class="when">Entrega: 22/09/2026</div>
+      </article><article>
+        <div class="who">Racing Club</div>
+        <div class="meta">Fila 132 · Entregado · pendiente de cobro</div>
+        <div class="amt">$99.000</div>
+        <div class="job">6 banderín mundial de clubes</div>
+        <div class="when">Entrega: 21/08/2026</div>
+      </article><article>
+        <div class="who">Transporte Molina</div>
+        <div class="meta">Fila 163 · Entregado · pendiente de cobro</div>
+        <div class="amt">$98.000</div>
+        <div class="job">Tarjetas Personales</div>
+        <div class="when">Entrega: 06/09/2026</div>
+      </article><article>
+        <div class="who">Transporte Molina</div>
+        <div class="meta">Fila 150 · Entregado · pendiente de cobro</div>
+        <div class="amt">$80.000</div>
+        <div class="job">Un banner</div>
+        <div class="when">Entrega: 25/08/2026</div>
+      </article></section><section><h2>Entregados y pagados <span>63</span></h2><p class="summary">Total cobrado en entregados: $11.957.870 (63). Detalle omitido — ver planilla Eventos.</p></section></div><div class="block"><h2 class="block-title">Cheques emitidos</h2><p class="summary">Proximos 7 dias (26/10/2026 – 02/11/2026): $0 · 0 cheques. Total posdatados: $0 · 0.</p><p class="empty">Sin cheques emitidos posdatados</p></div><div class="block"><h2 class="block-title">Cuentas corrientes</h2><p class="summary">Total CC clientes: $6.583.990 · 17 ventas.</p><article>
         <div class="who">Racing Club</div>
         <div class="meta">Vence: 21/08/2026 · Entregado</div>
         <div class="amt">$330.000</div>
@@ -140,7 +196,7 @@
         <div class="job">Cien tarjetas</div>
       </article><article>
         <div class="who">Remax Domira</div>
-        <div class="meta">Vence: 30/10/2026 · En Espera</div>
+        <div class="meta">Vence: 30/10/2026 · En Producción</div>
         <div class="amt">$22.000</div>
         <div class="job">100 tarjetas</div>
       </article><article>
@@ -159,7 +215,7 @@
         <div class="amt">$191.000</div>
         <div class="job">2 fly banner gota; 1 roll up</div>
       </article></div>
-  <footer>Ventas sin montos. Cheques y CC con montos. Fila = planilla Eventos.</footer>
+  <footer>Ventas sin montos. Cobranza/cheques/CC con montos. Fila = planilla Eventos. VENCIDO = FechaEntrega pasada y pedido abierto.</footer>
 </main>
 </body>
 </html>
